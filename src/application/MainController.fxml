@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="421.0" prefWidth="436.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.MainController">
+   <children>
+      <JFXTextArea fx:id="label" layoutX="93.0" layoutY="122.0" prefHeight="100.0" prefWidth="264.0" promptText="Mətn.." />
+      <JFXTextField fx:id="keyField" layoutX="93.0" layoutY="262.0" prefHeight="35.0" prefWidth="264.0" promptText="Açar söz" />
+      <JFXButton fx:id="ecryptBtn" buttonType="RAISED" layoutX="93.0" layoutY="342.0" onAction="#encryptAction" prefHeight="25.0" prefWidth="118.0" text="Encrypte" />
+      <JFXButton fx:id="decryptBtn" buttonType="RAISED" layoutX="239.0" layoutY="342.0" onAction="#decryptAction" prefHeight="25.0" prefWidth="118.0" text="Decrypte" />
+      <Label layoutX="152.0" layoutY="39.0" text="Vigenere Cipher">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
